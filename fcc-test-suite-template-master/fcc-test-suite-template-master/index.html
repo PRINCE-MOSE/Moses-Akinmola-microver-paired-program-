@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <!--
+
+    Hello Camper!
+
+    For now, the test suite only works in Chrome!
+    Please read the README below in the JS Editor before beginning.
+    Feel free to delete this message once you have read it.
+    Good luck and Happy Coding!
+
+    - The freeCodeCamp Team
+    
+
+    -->
+    <nav>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </nav>
+
+    <form action="label" id="survey-form">
+      <label for="name" id="name-label">Enter Name</label>
+      <input type="text" id="name" value="name" required placeholder="Moses" />
+
+      <label for="name" id="email-label">Enter Email </label>
+      <input
+        type="email"
+        id="email"
+        value="email "
+        required
+        placeholder="moses@yahoo"
+      />
+
+      <label for="name" id="number-label">Num</label>
+      <input
+        type="number"
+        name="Tel-number"
+        id="number"
+        required
+        min="0"
+        max="9"
+        placeholder="1234"
+      />
+      <select name="" id="dropdown">
+        <option value="student">student</option>
+        <option value="Full time job">Full time job</option>
+        <option value="Full time learner">Full time learner</option>
+      </select>
+      <input type="radio" name="attribute" id="" value="male" />
+      <input type="radio" name="attribute" id="" value="female" />
+
+      <input type="checkbox" name="checkbox" id="" value="Front-end Projects" />
+      <input type="checkbox" name="checkbox" id="" value="Back-end Projects" />
+      <input type="checkbox" name="checkbox" id="" value="Data Visualization" />
+      <textarea name="" id="" cols="30" rows="10"> Suggestion</textarea>
+
+      <button id="bubmit">Submit</button>
+    </form>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
