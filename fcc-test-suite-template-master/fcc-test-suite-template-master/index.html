@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -19,55 +19,46 @@
     Good luck and Happy Coding!
 
     - The freeCodeCamp Team
-    
 
     -->
-    <nav>
-      <h1 id="title">freeCodeCamp Survey Form</h1>
-      <p id="description">
-        Thank you for taking the time to help us improve the platform
-      </p>
-    </nav>
+<h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
 
-    <form action="label" id="survey-form">
-      <label for="name" id="name-label">Enter Name</label>
-      <input type="text" id="name" value="name" required placeholder="Moses" />
+<p id="description" class="text-center">
+  Thank you for taking the time to help us improve the platform
+</p>
+<form action=""  id="survey-form">
+  <label for="name" id="name-label">Enter Name : </label>
+  <input type="text" name="name" id="name" required placeholder="Enter real data">
+  <label for="name" id="email-label">Enter Email : </label>
+  <input type="email" name="Email" id="email" required placeholder="Enter real data">
+  <label for="name" id="number-label">Enter Number : </label>
+  <input type="number" name="Number" id="number" required min="0" max="5" placeholder="Enter real data">
 
-      <label for="name" id="email-label">Enter Email </label>
-      <input
-        type="email"
-        id="email"
-        value="email "
-        required
-        placeholder="moses@yahoo"
-      />
+  <select id="dropdown" name="role" class="form-control" required="">
+    <option disabled="" selected="" value="">Select current role</option>
+    <option value="student">Student</option>
+    <option value="job">Full Time Job</option>
+    <option value="learner">Full Time Learner</option>
+    <option value="preferNo">Prefer not to say</option>
+    <option value="other">Other</option>
+  </select>
 
-      <label for="name" id="number-label">Num</label>
-      <input
-        type="number"
-        name="Tel-number"
-        id="number"
-        required
-        min="0"
-        max="9"
-        placeholder="1234"
-      />
-      <select name="" id="dropdown">
-        <option value="student">student</option>
-        <option value="Full time job">Full time job</option>
-        <option value="Full time learner">Full time learner</option>
-      </select>
-      <input type="radio" name="attribute" id="" value="male" />
-      <input type="radio" name="attribute" id="" value="female" />
+  
+  <label for=""><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Male</label>
+  <label for=""><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Female</label>
 
-      <input type="checkbox" name="checkbox" id="" value="Front-end Projects" />
-      <input type="checkbox" name="checkbox" id="" value="Back-end Projects" />
-      <input type="checkbox" name="checkbox" id="" value="Data Visualization" />
-      <textarea name="" id="" cols="30" rows="10"> Suggestion</textarea>
+  <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+  <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
 
-      <button id="bubmit">Submit</button>
-    </form>
 
-    <script src="js/index.js"></script>
+  <textarea name="more info" id="" cols="30" rows="10"></textarea>
+
+  <button type="submit" id="submit" class="submit-button">
+    Submit
+  </button>
+
+</form>
+
+    <script  src="js/index.js"></script>
   </body>
 </html>
