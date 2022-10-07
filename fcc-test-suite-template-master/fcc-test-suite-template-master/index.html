@@ -28,13 +28,13 @@
 </p>
 <form action=""  id="survey-form">
   <label for="name" id="name-label">Enter Name : </label>
-  <input type="text" name="name" id="name" required placeholder="Enter real data">
+  <input type="text" class="form-control" name="name" id="name" required placeholder="Enter real data">
   <label for="name" id="email-label">Enter Email : </label>
-  <input type="email" name="Email" id="email" required placeholder="Enter real data">
+  <input type="email" name="Email" class="form-control" id="email" required placeholder="Enter real data">
   <label for="name" id="number-label">Enter Number : </label>
-  <input type="number" name="Number" id="number" required min="0" max="5" placeholder="Enter real data">
+  <input type="number" name="Number" class="form-control" id="number" required min="0" max="5" placeholder="Enter real data">
 
-  <select id="dropdown" name="role" class="form-control" required="">
+  <select id="dropdown" name="role" class="form-control" required="" class="form-control">
     <option disabled="" selected="" value="">Select current role</option>
     <option value="student">Student</option>
     <option value="job">Full Time Job</option>
@@ -52,8 +52,8 @@
 
 
   <textarea name="more info" id="" cols="30" rows="10"></textarea>
-
-  <button type="submit" id="submit" class="submit-button">
+  
+  <button type="submit" id="submit" class=" submit-button">
     Submit
   </button>
 
